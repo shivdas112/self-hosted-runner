@@ -1,10 +1,10 @@
-name: selfhosted runner
-on : workflow_dispatch
+name: Terraform Dev Deploy
+on: workflow_dispatch
 jobs:
-  plan:
-   runs-on: self-hosted
-   steps:
-     - name: check repo
-       uses: actions/checkout@v4
-     - name: print
-       run: echo index.html
+    plan:
+        runs-on: self-hosted
+        steps:
+            - name: Check Repo
+              uses: actions/checkout@v4
+            - name: print
+              run: echo index.html
